@@ -46,7 +46,7 @@ h2 {
 }
 
 /* Paragraphs */
-p {
+p, h3 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1em;
     hyphens: auto;
@@ -64,7 +64,7 @@ p {
 /* Navigation Bar */
 .nav-bar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     margin-top: 0.8rem;
 }
 
@@ -91,7 +91,7 @@ p {
 }
 
 .nav-links a {
-    margin: 0 13px;
+    margin: 0 10px;
 }
 
 /* Card listing */
