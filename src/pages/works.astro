@@ -4,9 +4,6 @@ import Card from '../components/Card.astro';
 const pageTitle = "Works";
 ---
 <Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonLaptopGif" src="/meme1.webp"/>
-    </div>
     <h2>Projects</h2>
     <ul role="list" class="link-card-grid">
         <Card
@@ -21,23 +18,20 @@ const pageTitle = "Works";
             title="Finger Arithmetic"
             body="Finger detection"
         />
+    </ul>
+    <h2>Blog</h2>
+    <ul role="list" class="link-card-grid">
         <Card
-            href="https://github.com/afrizal0/banking-app"
+            href="https://github.com/afrizal0/playscrape"
             image="/GitHub.webp"
-            title="Simple Banking Backend"
-            body="Banking backend system using Golang"
+            title="Playscrape"
+            body="Playstore user reviews scraper"
         />
         <Card
-            href="https://github.com/afrizal0/Amazon-Clone"
+            href="https://github.com/afrizal0/finger_arithmetic"
             image="/GitHub.webp"
-            title="Simple Amazon Clone"
-            body="Simple Amazon Clone using Firebase"
-        />
-        <Card
-            href="https://github.com/afrizal0/pedulidiri.git"
-            image="/GitHub.webp"
-            title="PeduliDiri"
-            body="CRUD website for personal tracker using PHP"
+            title="Finger Arithmetic"
+            body="Finger detection"
         />
     </ul>
 </Layout>
