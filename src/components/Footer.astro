@@ -1,9 +1,6 @@
----
-const year = new Date().getFullYear();
----
 <footer>
     <div>
-        <small>&copy; {year} by <a href="https://github.com/afrizal0">afrizal</a>. All Rights Reserved.</small>
+        <small>&copy; <span id="copyright"></span> by <a href="https://github.com/afrizal0">afrizal</a>. All Rights Reserved.</small>
     </div>
 </footer>
 <style>
@@ -21,3 +18,6 @@ const year = new Date().getFullYear();
         text-decoration: none;
     }
 </style>
+<script>
+    document.querySelector('#copyright').textContent = new Date().getFullYear().toString()  
+</script>
