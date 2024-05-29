@@ -4,6 +4,7 @@ import { fade } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 const { pageTitle } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ const { pageTitle } = Astro.props;
         <ViewTransitions />
 	</head>
 	<body>
-        <Header />
+       <Header />
         <main transition:animate={fade({ duration: '0.4s' })} >
 		    <slot>Default text</slot>
         </main>

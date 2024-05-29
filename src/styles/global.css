@@ -107,26 +107,6 @@ html.light {
     color: #1e1e2e;
 }
 
-.light .title-link a {
-    color: #1e1e2e;
-}
-
-.light .card-title {
-    color: #1e1e2e; 
-}
-
-.light .card-txt {
-    color: #1e1e2e; 
-}
-
-.light .nav-links a {
-    color: #1e1e2e;
-}
-
-.light .link-card > a {
-    color: #1e1e2e; 
-}
-
 /* Media Query */
 @media only screen and (max-width: 600px) {
     body {

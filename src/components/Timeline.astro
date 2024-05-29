@@ -1,24 +1,44 @@
 <div class="timeline">
   <div class="outer">
+
     <div class="card">
       <div class="info">
         <div class="head">
+          <div class="left">
+            <img class="logo" src="https://media.licdn.com/dms/image/C560BAQFzcL4PJb4dwA/company-logo_200_200/0/1652077032809/pacmann_logo?e=2147483647&v=beta&t=1R2qxQQSPQ29-ywMdHDLf4sUvR4xITGlqKcJjBBrefk" alt="">
+          </div>
+          <div>
+            <h3 class="title">PACMANN ACADEMY</h3>
+            <p class="year">Data Science | Job Preparation Program</p>
+          </div>
+        </div>
+        <p>Relevant Course: Visualization, Business Understanding, Modelling</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="info">
+        <div class="head">
+          <img class="logo" src="https://upload.wikimedia.org/wikipedia/id/9/99/Logo_UIN_Alauddin.png" alt="">
+          <h3 class="title">UIN ALAUDDIN MAKASSAR</h3>
+          <p class="year">Mathematics (4th semesters) | GPA: 3.88/4</p>
+        </div>
+        <p>Relevant Course: Algorithms, Databases, Calculus, Statistics</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="info">
+        <div class="head">
+          <img class="logo" src="https://pbs.twimg.com/profile_images/454583810605072385/UcsqgvOt_400x400.jpeg" alt="">
             <h3 class="title">SMK NEGERI 4 PALOPO</h3>
             <p class="year">Software Engineering | score: 89.4</p>
         </div>
         <p>Relevant Course: Algorithms, web programming, OOP, Databases</p>
       </div>
     </div>
-    <div class="card">
-      <div class="info">
-        <div class="head">
-          <h3 class="title">UIN ALAUDDIN MAKASSAR</h3>
-          <p class="year">Mathematics (3rd semesters) | GPA: 3.88/4</p>
-        </div>
-        <p>Relevant Course: Algorithms, Databases, Calculus, Statistics</p>
-      </div>
-    </div>
-
+    
+    
   </div>
 </div>
 
@@ -31,9 +51,28 @@
   padding: 20px;
 }
 
+.head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.head .left {
+  justify-content: center
+}
+
+.logo {
+  width: 12vh;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+
 .head .title {
   margin-bottom: 2px;
 }
+
 .head p {
   margin-top: 0px;
   font-style: italic;
@@ -70,4 +109,6 @@ html.light .card {
   left: -30px;
   border: 3px solid #929D0E;
 }
+
+
 </style>

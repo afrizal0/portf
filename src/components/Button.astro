@@ -1,0 +1,32 @@
+---
+interface Props {
+    href: string;
+    text: string;
+}
+
+const {href, text} = Astro.props
+---
+<div class="button">
+    <a href={href}>
+    <button class="" >
+            {text}
+        </button>
+    </a>
+</div>
+
+<style>
+    button {
+        width: 100%;
+        border: 2px solid;
+        color: white;
+        padding: 2vh;
+        margin: 2px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    html.light button {
+        color: black;
+    }
+
+</style>
