@@ -4,6 +4,7 @@ import Card from '../components/Card.astro';
 const pageTitle = "Blog Posts";
 const allPosts = await Astro.glob('../pages/posts/*.md');
 ---
+
 <Layout pageTitle={pageTitle}>
     <h2>Blog</h2>
     <ul role="list" class="link-card-grid">
@@ -18,5 +19,4 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         )
     }
     </ul>
-
 </Layout>

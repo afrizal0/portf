@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { formatDate } from "../js/utils"
+const { frontmatter } = Astro.props
+const { title, description, category, author, pubDate, image } = frontmatter
+---
+
+<Layout pageTitle="Blog">
+    <header>
+        <div class="container">
+            <small>
+                <a href={`/category/${category}`} class="badge">{category}</a>
+            </small>
+            <h2 class="h2">{title}</h2>
+            <p>{formatDate(pubDate)}</p>
+        </div>
+        <img src=" " alt="">
+    </header>
+    <div class="post-content">
+        <div class="content">
+            <slot />
+        </div>
+        <div class="sidebar">
+
+        </div>
+    </div>
+</Layout>
+<!-- Math Web -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
