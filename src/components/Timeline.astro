@@ -1,114 +1,78 @@
-<div class="timeline">
-  <div class="outer">
+---
+interface Props {
+  schoolname: string;
+  major: string;
+  course: string;
+  src: any;
+}
 
-    <div class="card">
-      <div class="info">
-        <div class="head">
-          <div class="left">
-            <img class="logo" src="https://media.licdn.com/dms/image/C560BAQFzcL4PJb4dwA/company-logo_200_200/0/1652077032809/pacmann_logo?e=2147483647&v=beta&t=1R2qxQQSPQ29-ywMdHDLf4sUvR4xITGlqKcJjBBrefk" alt="">
-          </div>
-          <div>
-            <h3 class="title">PACMANN ACADEMY</h3>
-            <p class="year">Data Science | Job Preparation Program</p>
-          </div>
-        </div>
-        <p>Relevant Course: Visualization, Business Understanding, Modelling</p>
+const { schoolname, major, course, src } = Astro.props;
+---
+
+<div class="card">
+  <div class="info">
+    <div class="head">
+      <div class="left">
+        <img class="logo" src={src} alt="" />
+      </div>
+      <div class="right">
+        <h3 class="title">{schoolname}</h3>
+        <p class="year">{major}</p>
       </div>
     </div>
-
-    <div class="card">
-      <div class="info">
-        <div class="head">
-          <img class="logo" src="https://upload.wikimedia.org/wikipedia/id/9/99/Logo_UIN_Alauddin.png" alt="">
-          <h3 class="title">UIN ALAUDDIN MAKASSAR</h3>
-          <p class="year">Mathematics (4th semesters) | GPA: 3.88/4</p>
-        </div>
-        <p>Relevant Course: Algorithms, Databases, Calculus, Statistics</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="info">
-        <div class="head">
-          <img class="logo" src="https://pbs.twimg.com/profile_images/454583810605072385/UcsqgvOt_400x400.jpeg" alt="">
-            <h3 class="title">SMK NEGERI 4 PALOPO</h3>
-            <p class="year">Software Engineering | score: 89.4</p>
-        </div>
-        <p>Relevant Course: Algorithms, web programming, OOP, Databases</p>
-      </div>
-    </div>
-    
-    
+    <p>Relevant Course: {course}</p>
   </div>
 </div>
 
 <style>
+  .head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
+  .logo {
+    width: 12vh;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+  }
 
-/* Timeline Container */
-.timeline {
-  margin: 20px auto;
-  padding: 20px;
-}
+  .head .title {
+    margin-bottom: 2px;
+  }
 
-.head {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  .head p {
+    margin-top: 0px;
+    font-style: italic;
+  }
 
-}
-.head .left {
-  justify-content: center
-}
+  /* Outer Layer with the timeline border */
 
-.logo {
-  width: 12vh;
-  border-radius: 10px;
-  text-align: center;
-
-}
-
-
-.head .title {
-  margin-bottom: 2px;
-}
-
-.head p {
-  margin-top: 0px;
-  font-style: italic;
-}
-
-/* Outer Layer with the timeline border */
-.outer {
-  border-left: 2px solid ;
-}
-
-html.light .card {
+  html.light .card {
     border: 2px solid black;
-}
+  }
 
-/* Card container */
-.card {
-  position: relative;
-  margin: 0 0 20px 20px;
-  border: 2px solid white;
-  padding: 10px 20px 10px 20px;
-  border-radius: 8px;
-  max-width: 400px;
-  text-align: left;
-}
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    border: 2px solid white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: left;
+  }
 
-/* Timeline dot  */
-.title::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 999px;
-  left: -30px;
-  border: 3px solid #929D0E;
-}
-
-
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -30px;
+    border: 3px solid #929d0e;
+  }
 </style>
