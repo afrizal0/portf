@@ -10,7 +10,7 @@ const { title, description, category, author, pubDate, image } = frontmatter
     <header>
         <div class="container">
            
-            <h2 class="h2">{title}</h2>
+            <h2>{title}</h2>
             <small>
                 <a href={`/category/${category}`} class="badge">{category}</a>
             </small>
@@ -26,14 +26,5 @@ const { title, description, category, author, pubDate, image } = frontmatter
         </div>
     </div>
 </Layout>
-<!-- Math Web -->
-<script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
-    };
-</script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
