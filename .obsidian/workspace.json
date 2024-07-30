@@ -18,6 +18,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "193e414b77f92aac",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
         ]
       }
@@ -148,6 +158,9 @@
   },
   "active": "98da87e33458690f",
   "lastOpenFiles": [
+    "src/pages/category/Statistics.astro",
+    "src/pages/category",
+    "src/pages/posts/category",
     "src/pages/rss.xml.js",
     "src/pages/rss"
   ]
