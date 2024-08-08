@@ -1,41 +1,41 @@
 ---
 interface Props {
-    href: string;
-    text: string;
+  href: string;
+  text: string;
 }
 
-const {href, text} = Astro.props
+const { href, text } = Astro.props;
 ---
+
 <div class="button">
-    <a href={href} target="_blank">
-    <button >
-        {text}
+  <a href={href} target="_blank">
+    <button>
+      {text}
     </button>
-    </a>
+  </a>
 </div>
 
 <style>
-    button {
-        width: 100%;
-        border: 2px solid;
-        color: white;
-        padding: 2vh;
-        margin: 2px;
-        cursor: pointer;
-        background-color: transparent;
-    }
+  button {
+    width: 100%;
+    border: 2px solid;
+    color: var(--main-light);
+    padding: 2vh;
+    margin: 2px;
+    cursor: pointer;
+    background-color: transparent;
+  }
 
-    /* task: modify color */
-    button:hover {
-        background-color: white;
-        color: black
-    }
-    html.light button {
-        color: black;
-    }
-    html.light button:hover {
-        background-color: black;
-        color: white
-    }
-
+  /* task: modify color */
+  button:hover {
+    background-color: var(--main-light);
+    color: var(--main-dark);
+  }
+  html.light button {
+    color: var(--main-dark);
+  }
+  html.light button:hover {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+  }
 </style>

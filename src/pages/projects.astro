@@ -1,22 +1,29 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 const pageTitle = "Works";
 ---
+
 <Layout pageTitle={pageTitle}>
-    <h2>Projects</h2>
-    <ul role="list" class="link-card-grid">
-        <Card
-            href="https://github.com/afrizal0/playscrape"
-            image="/GitHub.webp"
-            title="Playscrape"
-            body="Playstore user reviews scraper"
-        />
-        <Card
-            href="https://github.com/afrizal0/finger_arithmetic"
-            image="/GitHub.webp"
-            title="Finger Arithmetic"
-            body="Finger detection"
-        />
-    </ul>
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3 class="title">textiny [ <a href="">url</a> ]</h3>
+    <p class="project-comp desc">a simple text editor based on terminal</p>
+  </div>
+
+  <div class="project">
+    <h3 class="title">playscrape</h3>
+    <p class="project-comp desc">a simple text editor based on terminal</p>
+  </div>
 </Layout>
+
+<style>
+  .project {
+    padding: 1vh 0;
+  }
+  .project-comp {
+    margin-top: 0vh;
+    line-height: 0.5;
+  }
+</style>

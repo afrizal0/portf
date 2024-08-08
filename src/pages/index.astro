@@ -24,10 +24,7 @@ const pageTitle = "afrizal's website";
     href="https://drive.google.com/file/d/1o7IQxOzupT09YTIGr-heJjj1EYWudlCJ/view?usp=sharing/"
     text="resume"
   />
-  <Button
-    href="https://afrizal0.github.io/"
-    text="blog"
-  />
+  <Button href="mailto:afriizaalll@gmail.com" text="email me" />
   <h2>about me</h2>
   <p>
     Hello! I'm Muhammad <b>Afrizal</b>, a passionate student majoring in
@@ -44,7 +41,7 @@ const pageTitle = "afrizal's website";
     website, I aim to share my experiences, projects, and knowledge gained on
     this exciting journey.
   </p>
-  
+
   <h2>academics</h2>
 
   <div class="timeline">
@@ -55,19 +52,36 @@ const pageTitle = "afrizal's website";
             schoolname="Pacmann Academy"
             major="Data Science | Job Preparation Program"
             course="Visualization, Business Understanding, Modelling"
-            src="https://media.licdn.com/dms/image/C560BAQFzcL4PJb4dwA/company-logo_200_200/0/1652077032809/pacmann_logo?e=2147483647&v=beta&t=1R2qxQQSPQ29-ywMdHDLf4sUvR4xITGlqKcJjBBrefk"
+            src="/img/pacmann.jpeg"
           />
           <Timeline
             schoolname="UIN Alauddin Makassar"
             major="Mathematics (4th semesters) | GPA: 3.88/4"
             course="Algorithms, Databases, Calculus, Statistics"
-            src="https://upload.wikimedia.org/wikipedia/id/9/99/Logo_UIN_Alauddin.png"
+            src="/img/uinam.png"
           />
           <Timeline
             schoolname="SMKN 4 Palopo"
             major="Software Engineering | score: 89.4"
             course="Algorithms, Web Programming, OOP, Databases"
-            src="https://pbs.twimg.com/profile_images/454583810605072385/UcsqgvOt_400x400.jpeg"
+            src="/img/smk.jpeg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>experiences</h2>
+
+  <div class="timeline">
+    <div class="outer">
+      <div class="card">
+        <div class="info">
+          <Timeline
+            schoolname="Dinas Komunikasi dan Informatika Kota Palopo"
+            major="Finance Department"
+            course="Visualization, Business Understanding, Modelling"
+            src="/img/kominfo.png"
           />
         </div>
       </div>
@@ -163,7 +177,7 @@ const pageTitle = "afrizal's website";
   /* small */
   small {
     background-color: #584966;
-    color: #929d0e;
+    color: var(--main-light);
     border-radius: 6px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
@@ -172,18 +186,22 @@ const pageTitle = "afrizal's website";
 
   /* Button */
   button {
-    background: rgba(0, 0, 0, 0);
-    border: 2px solid black;
+    background: var(--main-dark);
+    border: 2px solid var(--main-dark);
     border-radius: 8px;
     color: black;
-    font: 600 16px "Josefin Sans", sans-serif;
+    font:
+      600 16px "Josefin Sans",
+      sans-serif;
     padding: 8px 16px;
-    transition: background-color 0.4s, color 0.4s;
+    transition:
+      background-color 0.4s,
+      color 0.4s;
   }
 
   button:hover {
-    background-color: black;
-    color: #fdebf3;
+    background-color: red;
+    color: var(--main-light);
     cursor: pointer;
   }
 
