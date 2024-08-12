@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+const pageTitle = "Now";
+---
+
+<Layout pageTitle={pageTitle}>
+  <h2>now</h2>
+  <div id="now">
+    <ul>
+      <li>
+        <p>
+          Mathematics student @ Alauddin State Islamic University of Makassar
+        </p>
+      </li>
+      <li><p>Learning data science @ Pacmann Academy</p></li>
+      <li><p>Learning some low level stuff with C and x86-64 Assembly</p></li>
+      <li><p>Building TexTiny, a text editor based on terminal</p></li>
+    </ul>
+  </div>
+  <h2>reading list</h2>
+  <div id="reading-list">
+    <ul>
+      <li>
+        <p>Computer System A Programmer's Perspective</p>
+      </li>
+      <li>
+        <p>
+          Introduction to 64 Bit Intel Assembly Language Programming for Linux
+        </p>
+      </li>
+      <li>
+        <p>An Introduction to Statistical Learning</p>
+      </li>
+      <li>
+        <p>Designing Data Intensive Application</p>
+      </li>
+    </ul>
+  </div>
+</Layout>
+
+<style>
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+</style>

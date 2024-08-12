@@ -18,16 +18,15 @@ const pageTitle = "afrizal's website";
   </div>
   <h1 class="heading">Afrizal</h1>
   <small>Math student</small>
-
-  <!-- TODO: Create CTA button -->
   <Button
     href="https://drive.google.com/file/d/1o7IQxOzupT09YTIGr-heJjj1EYWudlCJ/view?usp=sharing/"
     text="resume"
   />
   <Button
-    href="https://afrizal0.github.io/"
-    text="blog"
+    href="https://www.linkedin.com/in/muh-afrizal-nur-47b4a6228/"
+    text="linkedin"
   />
+  <Button href="mailto:afriizaalll@gmail.com" text="email me" />
   <h2>about me</h2>
   <p>
     Hello! I'm Muhammad <b>Afrizal</b>, a passionate student majoring in
@@ -44,8 +43,8 @@ const pageTitle = "afrizal's website";
     website, I aim to share my experiences, projects, and knowledge gained on
     this exciting journey.
   </p>
-  
-  <h2>academics</h2>
+
+  <h2 id="academics">academics</h2>
 
   <div class="timeline">
     <div class="outer">
@@ -55,19 +54,36 @@ const pageTitle = "afrizal's website";
             schoolname="Pacmann Academy"
             major="Data Science | Job Preparation Program"
             course="Visualization, Business Understanding, Modelling"
-            src="https://media.licdn.com/dms/image/C560BAQFzcL4PJb4dwA/company-logo_200_200/0/1652077032809/pacmann_logo?e=2147483647&v=beta&t=1R2qxQQSPQ29-ywMdHDLf4sUvR4xITGlqKcJjBBrefk"
+            src="/img/pacmann.jpeg"
           />
           <Timeline
             schoolname="UIN Alauddin Makassar"
             major="Mathematics (4th semesters) | GPA: 3.88/4"
             course="Algorithms, Databases, Calculus, Statistics"
-            src="https://upload.wikimedia.org/wikipedia/id/9/99/Logo_UIN_Alauddin.png"
+            src="/img/uinam.png"
           />
           <Timeline
             schoolname="SMKN 4 Palopo"
             major="Software Engineering | score: 89.4"
             course="Algorithms, Web Programming, OOP, Databases"
-            src="https://pbs.twimg.com/profile_images/454583810605072385/UcsqgvOt_400x400.jpeg"
+            src="/img/smk.jpeg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>experiences</h2>
+
+  <div class="timeline">
+    <div class="outer">
+      <div class="card">
+        <div class="info">
+          <Timeline
+            schoolname="Dinas Komunikasi dan Informatika"
+            major="Finance Department"
+            course="Tax Reports, Presentation, Work Culture"
+            src="/img/kominfo.png"
           />
         </div>
       </div>
@@ -133,20 +149,26 @@ const pageTitle = "afrizal's website";
     <img
       width="46"
       height="46"
-      alt="PostGres"
+      alt="express"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
     />
     <img
       width="46"
       height="46"
-      alt="PostGres"
+      alt="git"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
     />
     <img
       width="46"
       height="46"
-      alt="PostGres"
+      alt="golang"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+    />
+    <img
+      width="46"
+      height="46"
+      alt="c"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
     />
   </div>
   <h2>interests</h2>
@@ -163,7 +185,7 @@ const pageTitle = "afrizal's website";
   /* small */
   small {
     background-color: #584966;
-    color: #929d0e;
+    color: var(--main-light);
     border-radius: 6px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
@@ -172,18 +194,22 @@ const pageTitle = "afrizal's website";
 
   /* Button */
   button {
-    background: rgba(0, 0, 0, 0);
-    border: 2px solid black;
+    background: var(--main-dark);
+    border: 2px solid var(--main-dark);
     border-radius: 8px;
     color: black;
-    font: 600 16px "Josefin Sans", sans-serif;
+    font:
+      600 16px "Josefin Sans",
+      sans-serif;
     padding: 8px 16px;
-    transition: background-color 0.4s, color 0.4s;
+    transition:
+      background-color 0.4s,
+      color 0.4s;
   }
 
   button:hover {
-    background-color: black;
-    color: #fdebf3;
+    background-color: red;
+    color: var(--main-light);
     cursor: pointer;
   }
 

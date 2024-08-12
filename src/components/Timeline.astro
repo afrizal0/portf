@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 interface Props {
   schoolname: string;
   major: string;
@@ -33,7 +34,7 @@ const { schoolname, major, course, src } = Astro.props;
 
   .logo {
     width: 10vh;
-    border-radius: 10px;
+    border-radius: 20%;
     text-align: center;
     margin-right: 10px;
   }
