@@ -1,29 +1,55 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-const pageTitle = "Works";
+const pageTitle = "Projects";
 ---
 
 <Layout pageTitle={pageTitle}>
-  <h2>Projects</h2>
+  <h2>projects</h2>
 
   <div class="project">
-    <h3 class="title">textiny [ <a href="">url</a> ]</h3>
-    <p class="project-comp desc">a simple text editor based on terminal</p>
+    <div class="left">
+      <img src="/img/github.webp" alt="" />
+    </div>
+    <div class="right">
+      <p class="title">
+        <a href="https://github.com/afrizal0/textiny" target="_blank">textiny</a
+        >
+      </p>
+      <p class="desc">a simple text editor based on terminal built with C</p>
+    </div>
   </div>
-
   <div class="project">
-    <h3 class="title">playscrape</h3>
-    <p class="project-comp desc">a simple text editor based on terminal</p>
+    <div class="left">
+      <img src="/img/github.webp" alt="" />
+    </div>
+    <div class="right">
+      <p class="title">
+        <a href="https://github.com/afrizal0/playscrape" target="_blank"
+          >playscrape</a
+        >
+      </p>
+      <p class="desc">a tool for scraping play store comments</p>
+    </div>
   </div>
 </Layout>
 
 <style>
   .project {
-    padding: 1vh 0;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
   }
-  .project-comp {
-    margin-top: 0vh;
-    line-height: 0.5;
+  .project img {
+    width: 3.5rem;
+    border-radius: 15%;
+  }
+  p {
+    margin: 1rem;
+    text-align: start;
+  }
+  .title {
+    line-height: 0.5rem;
+    font-weight: bold;
+    text-decoration: underline;
   }
 </style>
