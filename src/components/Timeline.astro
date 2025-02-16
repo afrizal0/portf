@@ -1,13 +1,12 @@
 ---
 import Image from "astro/components/Image.astro";
 interface Props {
-  schoolname: string;
-  major: string;
-  course: string;
+  name: string;
+  desc: string;
   src: any;
 }
 
-const { schoolname, major, course, src } = Astro.props;
+const { name, desc, src } = Astro.props;
 ---
 
 <div class="card">
@@ -17,11 +16,11 @@ const { schoolname, major, course, src } = Astro.props;
         <img class="logo" src={src} alt="" />
       </div>
       <div class="right">
-        <h3 class="title">{schoolname}</h3>
-        <p class="year">{major}</p>
+        <h3 class="title">{name}</h3>
+        <p class="year">{desc}</p>
       </div>
     </div>
-    <p>Relevant Course: {course}</p>
+    <slot />
   </div>
 </div>
 
